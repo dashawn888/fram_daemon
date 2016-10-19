@@ -1,0 +1,18 @@
+This library provides the following arguments.
+    --daemon      # Logs to the CLI.  If you don't specify a handler this is
+                  # default.
+
+    --pid_file    # Logs all messages debug and below.
+
+EXAMPLE:
+    import fram
+    import fram_daemon
+
+    def main(framework):
+        LOGGER.debug("example debug")
+        LOGGER.info("example info")
+        LOGGER.warning("example warning")
+        LOGGER.error("example error")
+
+    if __name__ == "__main__":
+        fram.run(func=main)
