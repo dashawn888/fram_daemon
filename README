@@ -1,8 +1,6 @@
 This library provides the following arguments.
-    --daemon      # Logs to the CLI.  If you don't specify a handler this is
-                  # default.
-
-    --pid_file    # Logs all messages debug and below.
+    --daemon      # Causes the process to fork in the background.
+    --pid_file    # Location of pid file (after fork).
 
 EXAMPLE:
     import fram
