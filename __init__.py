@@ -8,6 +8,7 @@ __email__ = "shawn@143t.com"
 
 
 def main_decorator(func):
+    """Make sure that the forking is handled properly."""
     def wrapped(fram):
         if fram["argparse"].daemon:
             if os.fork() != 0:
